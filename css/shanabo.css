@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/backgroundlogin.png);
+}
+.shanab{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    left: 60px;
+    top: 50px;
+    margin-left: 350px;
+    color: rgb(41, 27, 27);
+    /* background-color: currentColor; */
+    border-radius: 50%;
+    box-shadow: 150px 240px 0 0 currentColor, 300px 240px 0 0 currentColor;
+
+}
+.shanab::before{
+    content:'';
+    position: absolute;
+    width: 210px;
+    height: 120px;
+    border-bottom: 180px solid currentcolor;
+    border-radius: 0 0 0 100%;
+    left: 30px;
+    top: 120px;
+    transform-origin: right 210px;
+    transform: rotate(-35deg);
+    
+}
+
+.shanab::after{
+    content: '';
+    position: absolute;
+    width: 210px;
+    height: 120px;
+    border-bottom: 180px solid currentcolor;
+    border-radius: 0 0 100% 0;
+    left: 390px;
+    top: 120px;
+    transform-origin: left 210px;
+    transform: rotate(35deg);
+}
+.shanab::before{
+    /* animation-timing-function: ease-in-out; */
+    animation: shanabDanceleft 1.5s ease-in-out infinite;
+}
+.shanab::after{
+    animation: shanabDanceright 1.5s ease-in-out infinite;
+}
+
+@keyframes shanabDanceleft{
+    0%{
+        transform: rotate (-60deg)
+
+    }
+
+    100%{
+        transform: rotate(-60deg)
+
+    }
+}
+
+@keyframes shanabDanceright {
+    0% {
+        transform: rotate (60deg)
+    }
+
+    100% {
+        transform: rotate(60deg)
+    }
+}
+
+.welcome{
+    margin-top: 100px;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    overflow: auto;    
+    color: white;
+    text-shadow: 0 0 0 2px black;
+}
+
+.welcome p{
+    color: rgb(17, 9, 9);
+    font-weight: bolder;
+    font-size: 45px;
+    margin-top: -10px;
+    }
+.botton {
+    width: 80px;
+    height: 60px;
+    margin-top: 20%;
+    margin-left: 50%px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 40px;
+
+}
+
+

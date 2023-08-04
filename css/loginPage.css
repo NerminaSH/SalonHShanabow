@@ -1,0 +1,182 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    background: url("../images/backgroundlogin.png");
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.header {
+    padding: 20px 0;
+
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+    border-radius: 100px;
+}
+
+.header .main_menu {
+    display: flex;
+}
+
+.header .main_menu li a {
+    display: block;
+    color: rgb(7, 6, 6);
+    text-decoration: none;
+    font-family: poppins;
+    font-size: 18px;
+    font-style: initial;
+    font-weight: bold;
+    padding: 10px 20px;
+
+}
+
+.header .main_menu li {
+    position: relative;
+}
+
+.main_menu li:hover>a {
+    color: rgb(222, 165, 51);
+}
+
+
+.common_btn a {
+    padding: 10px 30px;
+    border-radius: 40px;
+    font-family: poppins;
+    font-size: 22px;
+    color: #fff;
+    background-color: black;
+    border: 1px solid orange;
+    text-decoration: none;
+}
+
+.common_btn a:hover {
+    background-color: orange;
+    color: #fff;
+}
+
+.photo {
+    position: relative;
+    height: 500px;
+    width: auto;
+    background-image: url(../images/header.png);
+    background-size: cover;
+    opacity: .8;
+}
+
+
+
+.loginBox {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 420px;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+
+}
+
+
+
+h2 {
+    margin: 0;
+    padding: 0 0 20px;
+    color: #06090c;
+    text-align: center;
+}
+
+
+
+.loginBox p {
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+
+}
+
+
+.loginBox input {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.loginBox input[type="text"],
+.loginBox input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+
+
+}
+
+
+.loginBox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    background: orange;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+
+.loginBox input[type="submit"]:hover {
+    background: #0a0a0a;
+    color: wheat;
+}
+
+
+
+
+.loginBox a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+.user {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-100px/2);
+    left: calc(50% - 50px);
+    border-radius: 50%;
+}

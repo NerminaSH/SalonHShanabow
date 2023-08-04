@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background-image: url(../images/backgroundlogin.png);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, ;
+}
+
+.header {
+    padding: 20px 0;
+
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+    border-radius: 100px;
+}
+
+.header .main_menu {
+    display: flex;
+}
+
+.header .main_menu li a {
+    display: block;
+    color: rgb(7, 6, 6);
+    text-decoration: none;
+    font-family: poppins;
+    font-size: 18px;
+    font-style: initial;
+    font-weight: bold;
+    padding: 10px 20px;
+
+}
+
+.header .main_menu li {
+    position: relative;
+}
+
+.main_menu li:hover>a {
+    color: rgb(222, 165, 51);
+}
+
+
+.common_btn a {
+    padding: 10px 30px;
+    border-radius: 40px;
+    font-family: poppins;
+    font-size: 22px;
+    color: #fff;
+    background-color: black;
+    border: 1px solid orange;
+    text-decoration: none;
+}
+
+.common_btn a:hover {
+    background-color: orange;
+    color: #fff;
+}
+
+.container2{
+    position: relative;
+    height: 600px;
+    width: 1000px;
+    border: 3px solid rgb(16, 9, 9);
+    top: 10px;
+    left: 250px;
+    border-radius: 20px;
+
+}
+.container2 .pricelist{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid rgb(216, 205, 205);
+    height: 1500px;
+    width: 1000px;
+    background-image: url(../images/Price\ List\ Flyer.png);
+    background-size: cover;
+    border-radius: 20px;
+    right: 3px;
+} 
